@@ -32,7 +32,16 @@
             android:name=".PaginaLogin"
             android:exported="false">
         </activity>
-
+        <activity
+            android:name=".SelectorModo"
+            android:exported="false">
+        </activity>
+        <activity android:name=".NuevoCompanyero"
+            android:exported="false">
+        </activity>
+        <activity android:name=".NuevoHogar"
+            android:exported="false">
+        </activity>
 
     </application>
 

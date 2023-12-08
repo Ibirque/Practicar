@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardDetails"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="12dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tvHeader"
+    app:layout_constraintMargin="16dp">
+
+    <!-- Contenido de la CardView -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#8DA3A6">
+
+        <!-- Nombre -->
+        <EditText
+            android:id="@+id/etName"
+            style="@style/EditTextBox"
+            android:hint="Ingresa el nombre"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Selector -->
+        <Spinner
+            android:id="@+id/spinnerAnimalType"
+            style="@style/EditTextBox"
+            android:layout_marginTop="16dp"
+            android:hint="Escoje el tipo de animal"
+            app:layout_constraintTop_toBottomOf="@+id/etName" />
+
+        <!-- Campos de Sexo, Nacimiento y Raza -->
+        <EditText
+            android:id="@+id/etSex"
+            style="@style/EditTextBox"
+            android:layout_marginTop="16dp"
+            android:hint="Sexo"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerAnimalType" />
+
+        <EditText
+            android:id="@+id/etBirthDate"
+            style="@style/EditTextBox"
+            android:layout_marginTop="16dp"
+            android:hint="Nacimiento (fecha)"
+            app:layout_constraintTop_toBottomOf="@+id/etSex" />
+
+        <EditText
+            android:id="@+id/etBreed"
+            style="@style/EditTextBox"
+            android:layout_marginTop="16dp"
+            android:hint="Raza"
+            app:layout_constraintTop_toBottomOf="@+id/etBirthDate" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

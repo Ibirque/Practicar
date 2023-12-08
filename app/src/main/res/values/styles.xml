@@ -1,0 +1,18 @@
+<resources>
+
+    <!-- Otros estilos aquí, si los tienes -->
+
+    <!-- Estilo para los EditText -->
+    <style name="EditTextBox">
+        <!-- Puedes agregar propiedades específicas de EditText aquí -->
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:background">#FFFFFF</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">18sp</item>
+        <!-- Agrega más propiedades según tus necesidades -->
+    </style>
+
+</resources>
